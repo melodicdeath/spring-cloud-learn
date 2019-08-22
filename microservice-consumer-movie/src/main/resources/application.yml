@@ -9,3 +9,22 @@ eureka:
     service-url:
       # 指定eureka server通信地址，注意/eureka/小尾巴不能少
       defaultZone: http://peer1:8081/eureka/,http://peer2:8082/eureka/
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: microservice-simple-provider-user
+  okhttp:
+    enabled: true
+
+microservice-simple-provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'hystrix.stream'
