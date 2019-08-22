@@ -1,0 +1,26 @@
+management:
+  endpoint:
+    health:
+      # 是否展示健康检查详情
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    root: INFO
+    # 配置日志级别，让hibernate打印出执行的SQL参数
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+spring:
+  application:
+    name: microservice-simple-provider-user
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8081/eureka/,http://peer1:8082/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000

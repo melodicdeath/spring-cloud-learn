@@ -5,11 +5,13 @@ import com.heynemo.microservicesimpleprovideruser.repository.UserRepository;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.annotation.Bean;
 
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
+@EnableEurekaServer
 @SpringBootApplication
 public class MicroservicesImpleProviderUserApplication {
     public static void main(String[] args) {

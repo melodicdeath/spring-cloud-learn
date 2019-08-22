@@ -1,0 +1,10 @@
+server:
+  port: 8082
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: peer2
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
