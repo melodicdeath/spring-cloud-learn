@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/microservice-consumer-movie" />
             <option value="$PROJECT_DIR$/microservice-simple-provider-user" />
           </set>
         </option>
