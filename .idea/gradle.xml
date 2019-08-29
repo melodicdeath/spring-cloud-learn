@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/microservice-consumer-movie" />
+            <option value="$PROJECT_DIR$/microservice-gateway-zuul" />
             <option value="$PROJECT_DIR$/microservice-simple-provider-user" />
           </set>
         </option>

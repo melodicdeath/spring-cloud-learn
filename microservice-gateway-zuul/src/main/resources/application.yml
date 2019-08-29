@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: microservice-gateway-zuul
+server:
+  port: 8084
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer2:8081/eureka/,http://peer1:8082/eureka/
+zuul:
+  routes:
+#    prefix: /api
+#    strip-prefix: false
+    routes:
+#      microservice-simple-provider-user: /users/**
+      microservice-simple-provider-user:
+        path: /users/**
+        strip-prefix: false
+logging:
+  level:
+    com.netflix: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
