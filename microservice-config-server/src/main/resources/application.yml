@@ -8,11 +8,14 @@ spring:
       server:
         git:
           uri:  https://github.com/melodicdeath/spring-cloud-learn.git
-          username: zt.freedom@gmail.com
-          password: mymelody891004
+#          username: zt.freedom@gmail.com
+#          password: mymelody891004
 #          search-paths: microservice-config-server/config/microservice-config-client
           repos:
             microservice-config-client:
+              uri:  https://github.com/melodicdeath/spring-cloud-learn.git
+              username: zt.freedom@gmail.com
+              password: mymelody891004
               pattern: microservice-config-client*
               clone-on-start: true
               search-paths: microservice-config-server/config/microservice-config-client
