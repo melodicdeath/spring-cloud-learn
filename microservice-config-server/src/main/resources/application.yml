@@ -10,7 +10,7 @@ spring:
           uri:  https://github.com/melodicdeath/spring-cloud-learn.git
           username: zt.freedom@gmail.com
           password: mymelody891004
-          search-paths: microservice-config-server
+          search-paths: microservice-config-server/config/microservice-config-client
 logging:
   level:
     org.springframework.cloud: DEBUG
