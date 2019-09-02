@@ -1,6 +1,2 @@
-
-spring:
-  application:
-    name: microservice-config-client
 server:
   port: 8086
