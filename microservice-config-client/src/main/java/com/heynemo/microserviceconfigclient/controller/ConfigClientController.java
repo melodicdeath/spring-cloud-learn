@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ConfigClientController {
-    @Value("${info.test2}")
+    @Value("${info.test}")
     private String profile;
 
     @GetMapping("/profile")
