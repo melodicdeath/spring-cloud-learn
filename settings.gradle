@@ -2,4 +2,6 @@ rootProject.name = 'spring-cloud-learn'
 include 'microservice-simple-provider-user'
 include 'microservice-consumer-movie'
 include 'microservice-gateway-zuul'
+include 'microservice-config-server'
+include 'microservice-config-client'
 
